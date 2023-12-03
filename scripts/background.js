@@ -1,13 +1,13 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   const tabUrl = tab.url ?? tab.pendingUrl;
   if (
-    changeInfo.status === "complete" &&
+    changeInfo.status === 'complete' &&
     tabUrl &&
-    tabUrl.includes("someurl.com")
+    tabUrl.includes('linkedin.com/feed')
   ) {
     chrome.scripting.insertCSS({
       target: { tabId: tabId },
-      files: ["css/global.css"],
+      files: ['css/global.css'],
     });
   }
 });
