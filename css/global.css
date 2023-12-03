@@ -1,3 +1,5 @@
-.css-selector {
+div.feed-shared-update-v2:has(div):has(div):has(a.app-aware-link):has(
+    div.feed-shared-conversations__content--with-comment
+  ) {
   display: none !important;
 }
