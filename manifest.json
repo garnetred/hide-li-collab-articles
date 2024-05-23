@@ -1,37 +1,32 @@
 {
   "manifest_version": 3,
   "name": "Hide LI Collab Articles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This Chrome browser extension hides collaborative articles on LinkedIn.",
-   "permissions": ["scripting"],
+  "permissions": ["scripting"],
   "icons": {
     "16": "images/writing-emoji-16.png",
     "32": "images/writing-emoji-32.png",
     "48": "images/writing-emoji-48.png",
     "128": "images/writing-emoji-128.png"
-},
-"background": {
+  },
+  "background": {
     "service_worker": "scripts/background.js"
-},
-"web_accessible_resources": [
-  {
-    "resources": ["css/*.css"],
-    "extension_ids": []
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["css/*.css"],
+      "extension_ids": []
     }
   ],
-"content_scripts": [
+  "content_scripts": [
     {
-        "matches": [
-        "*://www.linkedin.com/feed"
-      ],
+      "matches": ["*://www.linkedin.com/feed"],
       "css": ["css/global.css"]
     }
-],
-  "host_permissions": [
-    "*://www.linkedin.com/feed"
   ],
+  "host_permissions": ["*://www.linkedin.com/feed"],
   "action": {
-      "default_popup": "popup.html"
+    "default_popup": "popup.html"
   }
-
 }
