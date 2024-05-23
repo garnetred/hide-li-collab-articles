@@ -3,3 +3,7 @@ div.feed-shared-update-v2:has(div):has(div):has(a.app-aware-link):has(
   ) {
   display: none !important;
 }
+
+button[class*='feed-shared-coach-prompt'] {
+  display: none !important;
+}
