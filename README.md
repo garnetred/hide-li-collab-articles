@@ -3,9 +3,10 @@
 ## Abstract
 
 This Chrome extension hides the following on LinkedIn:
+
 - all collaborative articles on the home page
--  AI generated prompts below posts and on job postings
--  the star symbol that prompts users to upgrade to see post summaries.
+- AI generated prompts below posts and on job postings
+- the star symbol that prompts users to upgrade to see post summaries.
 
 ## Tech Stack
 
