@@ -21,11 +21,11 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://www.linkedin.com/feed"],
+      "matches": ["*://www.linkedin.com/*"],
       "css": ["css/global.css"]
     }
   ],
-  "host_permissions": ["*://www.linkedin.com/feed"],
+  "host_permissions": ["*://www.linkedin.com/*"],
   "action": {
     "default_popup": "popup.html"
   }
